@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../assets/img/logo.png"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guillermo Arana Tallado en Madera</title>
+    <link rel="stylesheet" href="../css/style.css"/>
+</head>
+
+<body id="estructuraBody">
+
+    <header>
+        <!-- banner con novedades -->
+        <p class="banner">Proximo Workshop 25 de Mayo - Colegiales</p>
+        
+        <!-- menu -->
+        <nav>
+
+            <!-- menu desktop -->
+            <div id="menuDesktop">
+                <ul class="menu">
+                    <li>
+                        <a href="../index.html">
+                            <img class="logo" src="../assets/img/LogoGA.png" alt="logo">
+                        </a>
+                    </li>
+                    <li><a href="../pages/sobre-mi.html">sobre mi</a></li>
+                    <li><a href="../pages/clases.html">clases</a></li>
+                    <li><a href="../pages/productos.html">productos</a></li>
+                    <li><a href="../pages/galeria.html">galeria</a></li>
+                    <li><a href="../pages/contacto.html">contacto</a></li>
+                </ul>
+            </div>
+
+            <!-- menu mobile -->
+            <div id="menuHamburguesa">
+
+                <a href="../index.html">
+                    <img class="logo" src="../assets/img/LogoGA.png" alt="logo">
+                </a>
+
+                <input type="checkbox" id="menu">
+                <label for="menu"> ☰ </label>
+                <ul>
+                    <li><a href="../pages/sobre-mi.html">sobre mi</a></li>
+                    <li><a href="../pages/clases.html">clases</a></li>
+                    <li><a href="../pages/productos.html">productos</a></li>
+                    <li><a href="../pages/galeria.html">galeria</a></li>
+                    <li><a href="../pages/contacto.html">contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contacto</h1>
+        <section>
+            <!-- Formulario de contacto -->
+            <article>
+                <form action="#" method="get" enctype="multipart/form-data">
+                    <fieldset class="formContacto" >
+                        <legend>Enviame tu consulta</legend>
+
+                        <!-- Nombre -->
+                        <label for="nombre">Nombre:</label>
+                        <div>
+                            <input name="nombre" type="text">
+                        </div>
+                        <br>
+
+                        <!-- Email -->
+                        <label for="email">Email:</label>
+                        <div>
+                            <input name="email" type="email">
+                        </div>
+                        <br>
+
+                        <!-- Seleccion tipo de consulta -->
+                        <label for="tipo-consulta">Tipo de consulta:</label>
+                        <div>
+                            <input name="tipo-consulta" type="radio" value="Clases / Workshops">
+                            <span>Clases | Workshops</span>  
+                            <br>
+                            <input name="tipo-consulta" type="radio" value="Tienda / Trabajos a pedido">
+                            <span>Tienda | Trabajos a pedido</span>
+                            <br>
+                            <input name="tipo-consulta" type="radio" value="Otros">
+                            <span>Otros</span>
+                        </div>
+                        <br>
+
+                        <!-- Mensaje -->
+                        <label for="email">Mensaje:</label>
+                        <div>
+                            <textarea name="mensaje"></textarea>
+                        </div>
+                        <br>
+
+                        <!-- Boton enviar -->
+                        <input name=enviar type="submit" value="Enviar">
+                    </fieldset>
+                </form>
+            </article>
+
+            <!-- Otras formas de contacto -->
+            <article class="contacto">
+
+                <div class="flexContacto"><!-- Whatsapp -->
+                    <a href="https://api.whatsapp.com/send?phone=5491160245972">
+                        <img src="../assets/img/icono_whatsapp.png" alt="instagram">
+                    </a>
+                    <h4>WhatsApp</h4>
+                    <p>11-6024-5972</p>
+                </div>
+
+                <div class="flexContacto"><!-- Instagram -->
+                    <a href="https://www.instagram.com/guillermoaranatallado/">
+                        <img src="../assets/img/icono_instagram.png" alt="instagram">
+                    </a>
+                    <h4>Instagram</h4>
+                    <p>guillermoaranatallado</p>
+                </div>
+                
+                <div class="flexContacto"><!-- Mail -->
+                    <a href="mailto: arana.marcos@gmail.com">
+                        <img src="../assets/img/icono_mail.png" alt="instagram">
+                    </a>
+                    <h4>Mail</h4>
+                    <p>arana.marcos@gmail.com</p>
+                </div> 
+
+            </article>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="piePagina">
+            <p>Guillermo Arana</p>
+            <a href="https://www.instagram.com/guillermoaranatallado/">
+                <img src="../assets/img/icono_instagram.png" alt="logo instagram">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

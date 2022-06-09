@@ -1,0 +1,486 @@
+@import url('https://fonts.googleapis.com/css2?family=Allison&family=Jost:wght@500&family=Oswald&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Oswald', Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: gainsboro;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* ------------------------------------- */
+/* Estructura grid general*/
+
+#estructuraBody {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px auto 40px;
+    grid-template-areas: "header" "main" "footer";
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+
+/* ------------------------------------- */
+/* Menu */
+
+.banner {
+    background-color: burlywood;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+#menuDesktop {
+    display: inline-block;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: outset 2px burlywood;
+    justify-content: start;
+    list-style-type: none;
+    padding: 10px;
+}
+
+.menu li a {
+    text-transform: capitalize;
+    text-decoration: none;
+    color: gainsboro;
+    font-size: large;
+    padding: 10px;
+    margin: 5px;
+}
+
+
+.menu li a:hover {
+    text-decoration: underline wavy;
+}
+
+.logo {
+    height: 50px;
+    opacity: 80%;
+}
+
+
+/* ------------------------------------- */
+/* Menu Hamburguesa */
+
+#menuHamburguesa {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#menuHamburguesa ul,
+#menuHamburguesa input {
+    display: none;
+}
+
+#menuHamburguesa img {
+    padding: 10px;
+}
+
+#menuHamburguesa label {
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: burlywood;
+    color: black;
+    width: 45px;
+    height: 45px;
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+    margin: 10px;
+}
+
+#menuHamburguesa li {
+    list-style: none;
+    border-bottom: 3px solid black;
+    margin: 20px;
+  }
+
+#menuHamburguesa li a {
+    text-transform: capitalize;
+    text-decoration: none;
+    color: burlywood;
+    font-size: xx-large;
+}
+
+#menuHamburguesa input:checked ~ {
+    border-bottom: none;
+}
+
+#menuHamburguesa input:checked ~ ul{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+    background: rgba(98, 98, 98, 0.95);
+    border-radius: 10px;
+    width: 80%;
+    margin: 10px;
+    margin-top: 30px;
+}
+
+#menuHamburguesa input:checked ~ label{
+    order: 999;
+}
+
+
+
+/* ------------------------------------- */
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+.piePagina {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    padding: 5px;
+    gap: 1rem;
+}
+
+.piePagina a {
+    height: 25px;
+}
+
+.piePagina a img {
+    height: 25px;
+}
+
+
+/* ------------------------------------- */
+/* Main z-index -1 para menuHamburguesa */
+
+main {
+    z-index: -1;
+}
+
+
+/* ------------------------------------- */
+/* Titulos H1 de cada pagina */
+
+h1 {
+    color: burlywood;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+
+/* ------------------------------------- */
+/* INDEX */
+
+.imgFondoIndex {
+    background-image: url(../assets/img/fondo_negro.png);
+    background-repeat: no-repeat;
+    background-position-x: 80%;
+    background-position-y:20%;
+    background-size: 90vh;
+}
+
+.cajaTitulo {
+    margin:20px;
+    margin-left: 5%;
+    margin-top: 10vh;
+}
+
+.cajaTitulo h1 {
+    margin: 0px;
+}
+
+.titulo {
+    color: burlywood;
+    font-size: 50px;
+}
+
+.titulo--modifier{
+    font-size: 25px;
+    margin-top: 50px;
+}
+
+.titulo--firma{
+    display: inline-block;
+    font-size: 70px;
+    font-family: 'Allison', cursive;
+    font-weight: lighter;
+    transform: rotate(-10deg);
+    color: gainsboro;
+    margin-left: 2%;
+    margin-top: 50px;
+}
+
+
+/* ------------------------------------- */
+/* SOBRE MI */
+
+.sobreMi {
+    font-family: 'Jost', sans-serif;
+    font-size: 18px;
+    padding: 20px;
+}
+
+.sobreMi h2 {
+    font-family: 'Oswald', Arial, Helvetica, sans-serif;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.sobreMi ul {
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+.sobreMi p {
+    margin-top: 10px;
+}
+
+.sobreMi img {
+    width: 90%;
+    margin-top: 15px;
+}
+
+
+/* ------------------------------------- */
+/* CLASES */
+
+.clases {
+    font-family: 'Jost', sans-serif;
+    font-size: 18px;
+    padding: 20px;
+}
+
+.clases h2 {
+    font-family: 'Oswald', Arial, Helvetica, sans-serif;
+    color: burlywood;
+}
+
+#grillaCursos {
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 5px;
+    column-gap: 2%;
+    margin-bottom: 40px;
+}
+
+.clases-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: rgb(60, 60, 60);
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+.clases-item img {
+    width: 80%;
+}
+
+.clases-item iframe {
+    width: 80%;
+    height: 200px;
+    opacity: 85%;
+}
+
+
+/* ------------------------------------- */
+/* PRODUCTOS */
+
+#grillaProductos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.productos {
+    display: inline-block;
+    margin-left: 15px;
+    margin-top: 15px;
+    background-color: rgb(30,30,30);
+    border: solid 2px black;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.productos img {
+    height: 300px;
+}
+
+
+/* ------------------------------------- */
+/* GALERIA */
+
+#grillaGaleria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    margin: 30px;
+}
+
+.galeria img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* ------------------------------------- */
+/* CONTACTO */
+
+.contacto {
+    margin: 30px;
+}
+
+.formContacto {
+    width: 60%;
+    border: solid 2px grey;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+
+.contacto h4 {
+    margin-left: 10px;
+    display: inline-block;
+    font-size: 20px;
+    color: burlywood;
+}
+
+.contacto a {
+    text-decoration: none;
+}
+
+.contacto p {
+    margin-left: 10px;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.flexContacto img {
+    height: 35px;
+}
+
+.flexContacto {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+
+/* ------------------------------------- */
+/* RESPONSIVE */
+
+@media screen and (min-width: 320px) {
+ 
+    /* Menu */
+    #menuDesktop {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 600px) {
+
+    /* Cursos */
+    #grillaCursos {
+        grid-template-columns: auto auto;
+    }
+
+    /* Galeria */
+    #grillaGaleria {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Contacto */
+    .formContacto {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    
+    /* Cursos */
+    #grillaCursos {
+        grid-template-columns: auto auto auto;
+    }
+
+    /* Galeria */
+    #grillaGaleria {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* Contacto */
+    .formContacto {
+        width: 30%;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    
+    /* Menu Nav */
+    #menuHamburguesa {
+        display: none;
+    }
+
+    #menuDesktop {
+        display: inline-block;
+    }
+
+    /* Sobre Mi */
+    .sobreMi img {
+        width: 60%;
+    }
+
+    /* Galeria */
+    #grillaGaleria {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    
+    /* Contacto */
+    .formContacto {
+        width: 20%;
+    }
+}
