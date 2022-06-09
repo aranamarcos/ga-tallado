@@ -149,6 +149,17 @@ footer {
     width: 80%;
     margin: 10px;
     margin-top: 30px;
+    animation-duration: 1.5s;
+    animation-name: aparecerMenuBurger;
+}
+
+@keyframes aparecerMenuBurger {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 #menuHamburguesa input:checked ~ label{
