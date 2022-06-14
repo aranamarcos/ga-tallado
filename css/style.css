@@ -75,6 +75,21 @@ h1 {
 
 
 /* ------------------------------------- */
+/* Fuentes y colores */
+
+.fontFam_allison {
+    font-family: 'Allison', cursive;
+}   
+
+.fontFam_jost {
+font-family: 'Jost', sans-serif;
+}
+
+.fontColor_burlywood {
+    color: burlywood;
+}
+
+/* ------------------------------------- */
 /* INDEX */
 
 .imgFondoIndex {
@@ -114,36 +129,6 @@ h1 {
     color: gainsboro;
     margin-left: 2%;
     margin-top: 50px;
-}
-
-
-/* ------------------------------------- */
-/* SOBRE MI */
-
-.sobreMi {
-    font-family: 'Jost', sans-serif;
-    font-size: 18px;
-    padding: 20px;
-}
-
-.sobreMi h2 {
-    font-family: 'Oswald', Arial, Helvetica, sans-serif;
-    margin-top: 30px;
-    margin-bottom: 20px;
-}
-
-.sobreMi ul {
-    margin-left: 40px;
-    margin-top: 10px;
-}
-
-.sobreMi p {
-    margin-top: 10px;
-}
-
-.sobreMi img {
-    width: 90%;
-    margin-top: 15px;
 }
 
 
