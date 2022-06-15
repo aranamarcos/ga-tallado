@@ -70,12 +70,12 @@ header ul {
 h1 {
     color: burlywood;
     margin-top: 20px;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 
 /* ------------------------------------- */
-/* Fuentes y colores */
+/* Fuentes, colores, y opacidad */
 
 .fontFam_allison {
     font-family: 'Allison', cursive;
@@ -87,6 +87,18 @@ font-family: 'Jost', sans-serif;
 
 .fontColor_burlywood {
     color: burlywood;
+}
+
+.fontColor_gainsboro {
+    color: gainsboro;
+}
+
+.fontColor_grey {
+    color: grey;
+}
+
+.opacity-15 {
+    opacity: 15%;
 }
 
 /* ------------------------------------- */
@@ -129,51 +141,6 @@ font-family: 'Jost', sans-serif;
     color: gainsboro;
     margin-left: 2%;
     margin-top: 50px;
-}
-
-
-/* ------------------------------------- */
-/* CLASES */
-
-.clases {
-    font-family: 'Jost', sans-serif;
-    font-size: 18px;
-    padding: 20px;
-}
-
-.clases h2 {
-    font-family: 'Oswald', Arial, Helvetica, sans-serif;
-    color: burlywood;
-}
-
-#grillaCursos {
-    display: grid;
-    grid-template-columns: auto;
-    row-gap: 5px;
-    column-gap: 2%;
-    margin-bottom: 40px;
-}
-
-.clases-item {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    background-color: rgb(60, 60, 60);
-    border-radius: 20px;
-    margin-bottom: 40px;
-}
-
-.clases-item img {
-    width: 80%;
-}
-
-.clases-item iframe {
-    width: 80%;
-    height: 200px;
-    opacity: 85%;
 }
 
 
@@ -224,120 +191,44 @@ font-family: 'Jost', sans-serif;
 /* ------------------------------------- */
 /* CONTACTO */
 
-.contacto {
-    margin: 30px;
-}
-
-.formContacto {
-    width: 60%;
-    border: solid 2px grey;
-    border-radius: 20px;
-    margin-left: 20px;
-    margin-top: 20px;
-    padding: 20px;
-}
-
-
-.contacto h4 {
-    margin-left: 10px;
-    display: inline-block;
-    font-size: 20px;
-    color: burlywood;
-}
-
-.contacto a {
-    text-decoration: none;
-}
-
-.contacto p {
-    margin-left: 10px;
-    display: inline-block;
-    font-size: 20px;
-}
-
-.flexContacto img {
+.mediosContacto img {
     height: 35px;
 }
 
-.flexContacto {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 5px;
+.mediosContacto h4 {
+    margin: 0px;
+    margin-left: 10px;
+    color: burlywood;
+}
+
+.mediosContacto p {
+    margin: 0px;
+    margin-left: 10px;
+    font-size: 20px;
 }
 
 
 /* ------------------------------------- */
 /* RESPONSIVE */
 
-@media screen and (min-width: 320px) {
- 
-    /* Menu */
-    #menuDesktop {
-        display: none;
-    }
-}
-
 @media screen and (min-width: 600px) {
-
-    /* Cursos */
-    #grillaCursos {
-        grid-template-columns: auto auto;
-    }
-
     /* Galeria */
     #grillaGaleria {
         grid-template-columns: repeat(3, 1fr);
     }
-
-    /* Contacto */
-    .formContacto {
-        width: 40%;
-    }
 }
 
 @media screen and (min-width: 1024px) {
-    
-    /* Cursos */
-    #grillaCursos {
-        grid-template-columns: auto auto auto;
-    }
-
     /* Galeria */
     #grillaGaleria {
         grid-template-columns: repeat(4, 1fr);
-    }
-
-    /* Contacto */
-    .formContacto {
-        width: 30%;
     }
 }
 
 
 @media screen and (min-width: 1200px) {
-    
-    /* Menu Nav */
-    #menuHamburguesa {
-        display: none;
-    }
-
-    #menuDesktop {
-        display: inline-block;
-    }
-
-    /* Sobre Mi */
-    .sobreMi img {
-        width: 60%;
-    }
-
     /* Galeria */
     #grillaGaleria {
         grid-template-columns: repeat(5, 1fr);
-    }
-    
-    /* Contacto */
-    .formContacto {
-        width: 20%;
     }
 }

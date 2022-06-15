@@ -56,13 +56,50 @@
         </nav>
     </header>
 
+
     <main>
         <h1>Contacto</h1>
-        <section>
-            <!-- Formulario de contacto -->
-            <article>
-                <form action="#" method="get" enctype="multipart/form-data">
-                    <fieldset class="formContacto" >
+
+        <div class="container ms-4">
+            <div class="row">
+
+                <!-- medios de contacto -->
+                <div class="col-md-12 col-xl-4">
+                    <div class="flex-column mediosContacto mt-5 mb-5">
+                        
+                        <!-- Whatsapp -->
+                        <div class="d-flex flex-row align-items-center mb-3">
+                            <a href="https://api.whatsapp.com/send?phone=5491160245972">
+                                <img src="../assets/img/icono_whatsapp.png" alt="instagram">
+                            </a>
+                            <h4>WhatsApp</h4>
+                            <p>11-6024-5972</p>
+                        </div>
+                        
+                        <!-- Instagram -->
+                        <div class="d-flex flex-row align-items-center mb-3">
+                            <a href="https://www.instagram.com/guillermoaranatallado/">
+                                <img src="../assets/img/icono_instagram.png" alt="instagram">
+                            </a>
+                            <h4>Instagram</h4>
+                            <p>guillermoaranatallado</p>
+                        </div>
+                        
+                        <!-- Mail -->
+                        <div class="d-flex flex-row align-items-center mb-3">
+                            <a href="mailto: arana.marcos@gmail.com">
+                                <img src="../assets/img/icono_mail.png" alt="instagram">
+                            </a>
+                            <h4>Mail</h4>
+                            <p>arana.marcos@gmail.com</p>
+                        </div> 
+                    </div>
+                </div>
+
+
+                <!-- formulario de contacto -->
+                <div class="col-md-12 col-xl-6"> 
+                    <fieldset class="form-control text-bg-dark p-3 mt-2">
                         <legend>Enviame tu consulta</legend>
 
                         <!-- Nombre -->
@@ -103,38 +140,9 @@
                         <!-- Boton enviar -->
                         <input name=enviar type="submit" value="Enviar">
                     </fieldset>
-                </form>
-            </article>
-
-            <!-- Otras formas de contacto -->
-            <article class="contacto">
-
-                <div class="flexContacto"><!-- Whatsapp -->
-                    <a href="https://api.whatsapp.com/send?phone=5491160245972">
-                        <img src="../assets/img/icono_whatsapp.png" alt="instagram">
-                    </a>
-                    <h4>WhatsApp</h4>
-                    <p>11-6024-5972</p>
                 </div>
-
-                <div class="flexContacto"><!-- Instagram -->
-                    <a href="https://www.instagram.com/guillermoaranatallado/">
-                        <img src="../assets/img/icono_instagram.png" alt="instagram">
-                    </a>
-                    <h4>Instagram</h4>
-                    <p>guillermoaranatallado</p>
-                </div>
-                
-                <div class="flexContacto"><!-- Mail -->
-                    <a href="mailto: arana.marcos@gmail.com">
-                        <img src="../assets/img/icono_mail.png" alt="instagram">
-                    </a>
-                    <h4>Mail</h4>
-                    <p>arana.marcos@gmail.com</p>
-                </div> 
-
-            </article>
-        </section>
+            </div>
+        </div>
     </main>
 
     <footer class="d-flex justify-content-center">
