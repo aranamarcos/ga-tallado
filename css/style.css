@@ -22,6 +22,14 @@ footer {
   grid-area: footer;
 }
 
+/* ------------------------------------- */
+/* Variables */
+/* ------------------------------------- */
+/* Mapas */
+/* ------------------------------------- */
+/* Mixins */
+/* ------------------------------------- */
+/* Estilos generales */
 * {
   margin: 0px;
   padding: 0px;
@@ -70,6 +78,10 @@ h1 {
 
 /* ------------------------------------- */
 /* Fuentes, colores, y opacidad */
+.fontFam_oswald {
+  font-family: "Oswald", Arial, Helvetica, sans-serif;
+}
+
 .fontFam_allison {
   font-family: "Allison", cursive;
 }
@@ -88,6 +100,10 @@ h1 {
 
 .fontColor_grey {
   color: grey;
+}
+
+.fontColor_black {
+  color: black;
 }
 
 .opacity-15 {
@@ -113,7 +129,7 @@ h1 {
   margin: 0px;
 }
 
-.titulo {
+.titulo, .titulo--firma, .titulo--modifier {
   color: burlywood;
   font-size: 50px;
 }
@@ -127,15 +143,15 @@ h1 {
   display: inline-block;
   font-size: 70px;
   font-family: "Allison", cursive;
+  color: gainsboro;
   font-weight: lighter;
   transform: rotate(-10deg);
-  color: gainsboro;
   margin-left: 2%;
   margin-top: 50px;
 }
 
 /* ------------------------------------- */
-/* CURSOS */
+/* CLASES */
 .descripcionCursos h2 {
   font-size: 2.5em;
 }
@@ -281,7 +297,7 @@ fieldset {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
   /* Galeria */
   #grillaGaleria {
     grid-template-columns: repeat(3, 1fr);
@@ -291,5 +307,17 @@ fieldset {
   /* Galeria */
   #grillaGaleria {
     grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* Galeria */
+  #grillaGaleria {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+@media screen and (min-width: 1920px) {
+  /* Galeria */
+  #grillaGaleria {
+    grid-template-columns: repeat(7, 1fr);
   }
 }/*# sourceMappingURL=style.css.map */
