@@ -23,8 +23,6 @@ footer {
 }
 
 /* ------------------------------------- */
-/* Variables */
-/* ------------------------------------- */
 /* Mapas */
 /* ------------------------------------- */
 /* Mixins */
@@ -78,31 +76,31 @@ h1 {
 
 /* ------------------------------------- */
 /* Fuentes, colores, y opacidad */
-.fontFam_oswald {
+.fontFam_f1 {
   font-family: "Oswald", Arial, Helvetica, sans-serif;
 }
 
-.fontFam_allison {
+.fontFam_f2 {
   font-family: "Allison", cursive;
 }
 
-.fontFam_fira {
+.fontFam_f3 {
   font-family: "Fira Sans", sans-serif;
 }
 
-.fontColor_burlywood {
+.fontColor_c1 {
   color: burlywood;
 }
 
-.fontColor_gainsboro {
+.fontColor_c2 {
   color: gainsboro;
 }
 
-.fontColor_grey {
+.fontColor_c3 {
   color: grey;
 }
 
-.fontColor_black {
+.fontColor_c4 {
   color: black;
 }
 
@@ -281,6 +279,38 @@ h1 {
 
 fieldset {
   width: 100%;
+}
+
+.form-check-input, .form-control {
+  background-color: gainsboro;
+}
+
+.form-check-input:checked {
+  background-color: burlywood;
+  border: black;
+  box-shadow: none;
+}
+
+.form-check-input:after {
+  background-color: burlywood;
+  border: black;
+  box-shadow: none;
+}
+
+.btn-modifier {
+  border-width: 3px;
+  --bs-btn-font-weight: 600;
+  --bs-btn-color: black;
+  --bs-btn-bg: burlywood;
+  --bs-btn-border-color: black;
+  --bs-btn-border-radius: .5rem;
+  --bs-btn-hover-color: black;
+  --bs-btn-hover-bg: burlywood;
+  --bs-btn-hover-border-color: burlywood;
+  --bs-btn-focus-shadow-rgb: burlywood;
+  --bs-btn-active-color: black;
+  --bs-btn-active-bg: burlywood;
+  --bs-btn-active-border-color: burlywood;
 }
 
 /* ------------------------------------- */

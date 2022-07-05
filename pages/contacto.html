@@ -38,7 +38,7 @@
 
                 <!-- link a paginas -->
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav text-center">
                         <li class="nav-item">
                             <a class="nav-link p-2" href="../pages/sobre-mi.html">Sobre mi</a>
                         </li>
@@ -100,49 +100,57 @@
                     </div>
                 </div>
 
-
-                <!-- formulario -->
-                <div class="col-xs-12 col-md-6"> 
-                    <fieldset class="form-control text-bg-dark mt-2">
-                        <legend class="fontColor_burlywood">Enviame tu consulta</legend>
-
-                        <!-- Nombre -->
-                        <label for="nombre">Nombre:</label>
-                        <div>
-                            <input name="nombre" type="text">
-                        </div>
-                        <br>
-
-                        <!-- Email -->
-                        <label for="email">Email:</label>
-                        <div>
-                            <input name="email" type="email">
-                        </div>
-                        <br>
-
-                        <!-- Seleccion tipo de consulta -->
-                        <label for="tipo-consulta">Tipo de consulta:</label>
-                        <div>
-                            <input name="tipo-consulta" type="radio" value="Clases / Workshops">
-                            <span>Clases | Workshops</span>  
+                
+                <!-- Formulario -->
+                <div class="col-xs-12 col-md-6 col-lg-4"> 
+                    <fieldset class="form-control text-bg-dark mt-2 border-dark">
+                        <legend class="fontColor_c1 text-center text-decoration-underline">Enviame tu consulta</legend>
+                        <form>
                             <br>
-                            <input name="tipo-consulta" type="radio" value="Tienda / Trabajos a pedido">
-                            <span>Tienda | Trabajos a pedido</span>
+
+                            <!-- Nombre -->
+                            <div>
+                                <label for="nombre" class="form-label fontColor_c1">Nombre</label>
+                                <input type="text" class="form-control" required>
+                            </div>
                             <br>
-                            <input name="tipo-consulta" type="radio" value="Otros">
-                            <span>Otros</span>
-                        </div>
-                        <br>
 
-                        <!-- Mensaje -->
-                        <label for="email">Mensaje:</label>
-                        <div>
-                            <textarea name="mensaje"></textarea>
-                        </div>
-                        <br>
+                            <!-- Email -->
+                            <div>
+                                <label for="email" class="form-label fontColor_c1">Email</label>
+                                <input type="email" class="form-control" required>
+                            </div>
+                            <br>
 
-                        <!-- Boton enviar -->
-                        <input name=enviar type="submit" value="Enviar">
+                            <!-- Seleccion tipo de consulta -->
+                            <div>
+                                <label for="tipo-consulta" class="form-label fontColor_c1">Tipo de consulta</label>
+                                <br>
+                                <div>
+                                    <input  class="form-check-input" type="radio" name="tipo-consulta" value="Clases / Workshops" required>
+                                    <span>Clases | Workshops</span>  
+                                    <br>
+                                    <input  class="form-check-input" type="radio" name="tipo-consulta" value="Tienda / Trabajos a pedido" required>
+                                    <span>Tienda | Trabajos a pedido</span>
+                                    <br>
+                                    <input  class="form-check-input" type="radio" name="tipo-consulta" value="Otros" required>
+                                    <span>Otros</span>
+                                </div>
+                            </div>
+                            <br>
+
+                            <!-- Mensaje -->
+                            <div>
+                                <label for="mensaje" class="form-label fontColor_c1">Mensaje</label>
+                                <textarea name="mensaje" class="form-control" required></textarea>                                
+                            </div>
+                            <br>
+
+                            <!-- Boton enviar -->
+                            <div class="d-flex justify-content-center">
+                                <button class="btn btn-primary btn-modifier d-flex justify-content-center" type="submit">Enviar</button>
+                            </div>
+                        </form>
                     </fieldset>
                 </div>
             </div>

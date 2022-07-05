@@ -2,24 +2,19 @@
 @import "estructuraGrid";
 
 /* ------------------------------------- */
-/* Variables */
-
-$colorPrincipal: burlywood;
-
-/* ------------------------------------- */
 /* Mapas */
 
-$fonts: (
-    oswald: ('Oswald', Arial, Helvetica, sans-serif),
-    allison: ("Allison", cursive),
-    fira: ("Fira Sans", sans-serif)
+$myFonts: (
+    f1: ('Oswald', Arial, Helvetica, sans-serif),
+    f2: ("Allison", cursive),
+    f3: ("Fira Sans", sans-serif)
 );
 
-$fontColors: (
-    _burlywood: burlywood,
-    _gainsboro: gainsboro,
-    _grey: grey,
-    _black: black
+$myColors: (
+    c1: burlywood,
+    c2: gainsboro,
+    c3: grey,
+    c4: black
 );
 
 /* ------------------------------------- */
@@ -43,9 +38,9 @@ html {
 }
 
 body {
-    font-family: map-get($fonts, oswald);
-    background-color: black;
-    color: map-get($fontColors, _gainsboro);
+    font-family: map-get($myFonts, f1);
+    background-color: map-get($myColors, c4);
+    color: map-get($myColors, c2);
     @include widthHeight(100%, 100%)
 }
 
@@ -54,12 +49,12 @@ body {
 /* Menu */
 
 .banner {
-    background-color: $colorPrincipal;
-    color: map-get($fontColors, _black);
+    background-color: map-get($myColors, c1);
+    color: map-get($myColors, c4);
 }
 
 .navbar-nav {
-    border-bottom: outset 2px $colorPrincipal;
+    border-bottom: outset 2px map-get($myColors, c1);
     font-size: 1.1rem;
     li {
         a {
@@ -79,7 +74,7 @@ header ul {
 /* Titulos H1 de cada pagina */
 
 h1 {
-    color: map-get($fontColors, _burlywood);
+    color: map-get($myColors, c1);
     margin-top: 20px;
     margin-left: 20px;
 }
@@ -88,15 +83,15 @@ h1 {
 /* ------------------------------------- */
 /* Fuentes, colores, y opacidad */
 
-@each $fonts_name, $fonts_family in $fonts {
-    .fontFam_#{$fonts_name} {
-        font-family: $fonts_family;
+@each $myFonts_name, $myFonts_family in $myFonts {
+    .fontFam_#{$myFonts_name} {
+        font-family: $myFonts_family;
     }
 }
 
-@each $fontColors_name, $fontColors_value in $fontColors {
-    .fontColor#{$fontColors_name} {
-        color: $fontColors_value;
+@each $myColors_name, $myColors_value in $myColors {
+    .fontColor_#{$myColors_name} {
+        color: $myColors_value;
     }
 }
 
@@ -126,7 +121,7 @@ h1 {
 }
 
 .titulo {
-    color: map-get($fontColors, _burlywood);
+    color: map-get($myColors, c1);
     font-size: 50px;
 }
 
@@ -140,8 +135,8 @@ h1 {
     @extend .titulo;
     display: inline-block;
     font-size: 70px;
-    font-family: map-get($fonts, allison);
-    color: map-get($fontColors, _gainsboro);
+    font-family: map-get($myFonts, f2);
+    color: map-get($myColors, c2);
     font-weight: lighter;
     transform: rotate(-10deg);
     margin-left: 2%;
@@ -175,7 +170,7 @@ h1 {
     position: relative;
     overflow: hidden;
     @include widthHeight(350px, 350px);
-    border: solid 2px black;
+    border: solid 2px map-get($myColors, c4);
     border-radius: 20px;
     cursor: pointer;
     opacity: 1;
@@ -257,7 +252,7 @@ h1 {
     h4 {
         margin: 0px;
         margin-left: 10px;
-        color: map-get($fontColors, _burlywood);
+        color: map-get($myColors, c1);
     }
     p {
         margin: 0px;
@@ -269,6 +264,43 @@ h1 {
 fieldset {
     width: 100%;
 }
+
+
+// fondo gris a formularios
+.form-check-input, .form-control {
+    background-color: gainsboro;
+}
+
+// estilo personalizado del check radio
+.form-check-input:checked {
+    background-color: burlywood;
+    border: black;
+    box-shadow: none;
+}
+
+.form-check-input:after {
+    background-color: burlywood;
+    border: black;
+    box-shadow: none;
+}
+
+// estilo personalizado del boton ENVIAR
+.btn-modifier {
+    border-width: 3px;
+    --bs-btn-font-weight: 600;
+    --bs-btn-color: black;
+    --bs-btn-bg: burlywood;
+    --bs-btn-border-color: black;
+    --bs-btn-border-radius: .5rem;
+    --bs-btn-hover-color: black;
+    --bs-btn-hover-bg: burlywood;
+    --bs-btn-hover-border-color: burlywood;
+    --bs-btn-focus-shadow-rgb: burlywood;
+    --bs-btn-active-color: black;
+    --bs-btn-active-bg: burlywood;
+    --bs-btn-active-border-color: burlywood;
+}
+
 
 /* ------------------------------------- */
 /* RESPONSIVE */
