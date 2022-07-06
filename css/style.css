@@ -47,34 +47,6 @@ body {
 }
 
 /* ------------------------------------- */
-/* Menu */
-.banner {
-  background-color: burlywood;
-  color: black;
-}
-
-.navbar-nav {
-  border-bottom: outset 2px burlywood;
-  font-size: 1.1rem;
-}
-.navbar-nav li a:hover {
-  -webkit-text-decoration: underline wavy;
-          text-decoration: underline wavy;
-}
-
-header ul {
-  background-color: rgba(0, 0, 0, 0.92);
-}
-
-/* ------------------------------------- */
-/* Titulos H1 de cada pagina */
-h1 {
-  color: burlywood;
-  margin-top: 20px;
-  margin-left: 20px;
-}
-
-/* ------------------------------------- */
 /* Fuentes, colores, y opacidad */
 .fontFam_f1 {
   font-family: "Oswald", Arial, Helvetica, sans-serif;
@@ -89,7 +61,7 @@ h1 {
 }
 
 .fontColor_c1 {
-  color: burlywood;
+  color: rgb(222, 184, 135);
 }
 
 .fontColor_c2 {
@@ -106,6 +78,43 @@ h1 {
 
 .opacity-15 {
   opacity: 15%;
+}
+
+/* ------------------------------------- */
+/* Menu */
+.banner {
+  background-color: rgb(222, 184, 135);
+  color: black;
+}
+
+.navbar-nav {
+  border-bottom: outset 2px rgb(222, 184, 135);
+  font-size: 1.1rem;
+}
+.navbar-nav li a:hover {
+  -webkit-text-decoration: underline wavy;
+          text-decoration: underline wavy;
+}
+
+header ul {
+  background-color: rgba(0, 0, 0, 0.92);
+}
+
+/* ------------------------------------- */
+/* Titulos H1 de cada pagina */
+h1 {
+  color: rgb(222, 184, 135);
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+/* ------------------------------------- */
+/* FOOTER */
+footer img {
+  opacity: 75%;
+}
+footer img:hover {
+  opacity: 100%;
 }
 
 /* ------------------------------------- */
@@ -128,7 +137,7 @@ h1 {
 }
 
 .titulo, .titulo--firma, .titulo--modifier {
-  color: burlywood;
+  color: rgb(222, 184, 135);
   font-size: 50px;
 }
 
@@ -266,15 +275,23 @@ h1 {
 .mediosContacto img {
   height: 35px;
 }
-.mediosContacto h4 {
+.mediosContacto a {
+  font-size: 25px;
   margin: 0px;
   margin-left: 10px;
-  color: burlywood;
+  color: rgb(222, 184, 135);
+  text-decoration: none;
 }
 .mediosContacto p {
   margin: 0px;
   margin-left: 10px;
   font-size: 20px;
+}
+.mediosContacto a {
+  opacity: 75%;
+}
+.mediosContacto a:hover {
+  opacity: 100%;
 }
 
 fieldset {

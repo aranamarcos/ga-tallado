@@ -11,7 +11,7 @@ $myFonts: (
 );
 
 $myColors: (
-    c1: burlywood,
+    c1: rgb(222, 184, 135),
     c2: gainsboro,
     c3: grey,
     c4: black
@@ -42,6 +42,26 @@ body {
     background-color: map-get($myColors, c4);
     color: map-get($myColors, c2);
     @include widthHeight(100%, 100%)
+}
+
+
+/* ------------------------------------- */
+/* Fuentes, colores, y opacidad */
+
+@each $myFonts_name, $myFonts_family in $myFonts {
+    .fontFam_#{$myFonts_name} {
+        font-family: $myFonts_family;
+    }
+}
+
+@each $myColors_name, $myColors_value in $myColors {
+    .fontColor_#{$myColors_name} {
+        color: $myColors_value;
+    }
+}
+
+.opacity-15 {
+    opacity: 15%;
 }
 
 
@@ -81,22 +101,13 @@ h1 {
 
 
 /* ------------------------------------- */
-/* Fuentes, colores, y opacidad */
+/* FOOTER */
 
-@each $myFonts_name, $myFonts_family in $myFonts {
-    .fontFam_#{$myFonts_name} {
-        font-family: $myFonts_family;
+footer img {
+    opacity: 75%;
+    &:hover {
+        opacity: 100%;
     }
-}
-
-@each $myColors_name, $myColors_value in $myColors {
-    .fontColor_#{$myColors_name} {
-        color: $myColors_value;
-    }
-}
-
-.opacity-15 {
-    opacity: 15%;
 }
 
 
@@ -249,15 +260,25 @@ h1 {
     img {
         height: 35px;
     }
-    h4 {
+
+    a{
+        font-size: 25px;
         margin: 0px;
         margin-left: 10px;
         color: map-get($myColors, c1);
+        text-decoration: none;
     }
+
     p {
         margin: 0px;
         margin-left: 10px;
         font-size: 20px;
+    }
+    a {
+        opacity: 75%;
+        &:hover {
+            opacity: 100%;
+        }
     }
 }
 
