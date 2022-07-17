@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="../assets/img/logo.png"/>
+    <link rel="icon" href="../assets/img/otras/logo.png"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tallados en Madera de Guillermo Arana | GALERIA</title>
@@ -18,9 +18,16 @@
 
 <body id="estructuraBody">
 
-    <header>
+    <header class="fixed-top">
+
         <!-- banner superior con novedades -->        
-        <div class="container-fluid banner text-center fw-bold">Proximo Workshop 25 de Mayo - Colegiales</div>
+        <div class="banner">
+            <div>
+                <a href="./clases.html">Proximo Workshop 6 de Agosto - Colegiales</a>
+                <br>
+                <a href="./clases.html">Clases regulares en Tigre y Martinez</a>
+            </div>
+        </div>
         
         <!-- menu -->
         <nav class="navbar navbar-expand-lg navbar-dark">
@@ -28,7 +35,7 @@
 
                 <!-- logo -->
                 <a class="navbar-brand" href="../index.html">
-                    <img class="opacity-75" style="height: 50px" src="../assets/img/LogoGA.png" alt="logo">
+                    <img class="opacity-75" style="height: 50px" src="../assets/img/otras/LogoGA.png" alt="logo">
                 </a>
 
                 <!-- menu hamburguesa -->
@@ -38,27 +45,28 @@
 
                 <!-- link a paginas -->
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav text-center">
+                    <ul class="navbar-nav navbar-custom">
                         <li class="nav-item">
-                            <a class="nav-link p-2" href="../pages/sobre-mi.html">Sobre mi</a>
+                            <a class="nav-link p-2" href="./sobre-mi.html">Sobre mi</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link p-2" href="../pages/clases.html">Clases</a>
+                            <a class="nav-link p-2" href="./clases.html">Clases</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link p-2" href="../pages/productos.html">Productos</a>
+                            <a class="nav-link p-2" href="./productos.html">Productos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link p-2" href="../pages/galeria.html">Galeria</a>
+                            <a class="nav-link p-2" href="./galeria.html">Galeria</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link p-2" href="../pages/contacto.html">Contacto</a>
+                            <a class="nav-link p-2" href="./contacto.html">Contacto</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+    
 
     <main class="animate__animated animate__fadeIn">
         <h1>Galeria</h1>
@@ -66,42 +74,82 @@
         <section class="galeria">
 
             <div id="grillaGaleria">
-                <img class="animate__animated animate__backInLeft" src="../assets/img/galeria/galeria (1).jpeg" alt="Foto tallado en madera">
-                <img class="animate__animated animate__backInLeft" src="../assets/img/galeria/galeria (2).jpeg" alt="Foto tallado en madera">
-                <img class="animate__animated animate__backInLeft" src="../assets/img/galeria/galeria (3).jpeg" alt="Foto tallado en madera">
-                <img class="animate__animated animate__backInLeft" src="../assets/img/galeria/galeria (4).jpeg" alt="Foto tallado en madera">
-                <img class="animate__animated animate__backInLeft" src="../assets/img/galeria/galeria (5).jpeg" alt="Foto tallado en madera">
-                <img class="animate__animated animate__backInLeft" src="../assets/img/galeria/galeria (6).jpeg" alt="Foto tallado en madera">
-                <img class="animate__animated animate__backInLeft" src="../assets/img/galeria/galeria (7).jpeg" alt="Foto tallado en madera">
-                <img class="animate__animated animate__backInLeft" src="../assets/img/galeria/galeria (8).jpeg" alt="Foto tallado en madera">
-                <img class="animate__animated animate__backInLeft" src="../assets/img/galeria/galeria (9).jpeg" alt="Foto tallado en madera">
-                <img class="animate__animated animate__backInLeft" src="../assets/img/galeria/galeria (10).jpeg" alt="Foto tallado en madera">
-                <img class="animate__animated animate__backInLeft" src="../assets/img/galeria/galeria (11).jpeg" alt="Foto tallado en madera">
-                <img class="animate__animated animate__backInLeft" src="../assets/img/galeria/galeria (12).jpeg" alt="Foto tallado en madera">
-                <img class="animate__animated animate__backInLeft" src="../assets/img/galeria/galeria (13).jpeg" alt="Foto tallado en madera">
-                <img class="animate__animated animate__backInLeft" src="../assets/img/galeria/galeria (14).jpeg" alt="Foto tallado en madera">
-                <img class="animate__animated animate__backInLeft" src="../assets/img/galeria/galeria (15).jpeg" alt="Foto tallado en madera">
-                <img class="animate__animated animate__backInLeft" src="../assets/img/galeria/galeria (16).jpeg" alt="Foto tallado en madera">
-                <img class="animate__animated animate__backInLeft" src="../assets/img/galeria/galeria (17).jpeg" alt="Foto tallado en madera">
-                <img class="animate__animated animate__backInLeft" src="../assets/img/galeria/galeria (18).jpeg" alt="Foto tallado en madera">
-                <img class="animate__animated animate__backInLeft" src="../assets/img/galeria/galeria (19).jpeg" alt="Foto tallado en madera">
-                <img class="animate__animated animate__backInLeft" src="../assets/img/galeria/galeria (20).jpeg" alt="Foto tallado en madera">
+                <div class="animate__animated animate__backInLeft contenedorFoto">
+                    <img src="../assets/img/galeria/galeria (1).jpeg" alt="Foto tallado en madera">
+                </div>
+                <div class="animate__animated animate__backInLeft contenedorFoto">
+                    <img src="../assets/img/galeria/galeria (2).jpeg" alt="Foto tallado en madera">
+                </div>
+                <div class="animate__animated animate__backInLeft contenedorFoto">
+                    <img src="../assets/img/galeria/galeria (3).jpeg" alt="Foto tallado en madera">
+                </div>
+                <div class="animate__animated animate__backInLeft contenedorFoto">
+                    <img src="../assets/img/galeria/galeria (4).jpeg" alt="Foto tallado en madera">
+                </div>
+                <div class="animate__animated animate__backInLeft contenedorFoto">
+                    <img src="../assets/img/galeria/galeria (5).jpeg" alt="Foto tallado en madera">
+                </div>
+                <div class="animate__animated animate__backInLeft contenedorFoto">
+                    <img src="../assets/img/galeria/galeria (6).jpeg" alt="Foto tallado en madera">
+                </div>
+                <div class="animate__animated animate__backInLeft contenedorFoto">
+                    <img src="../assets/img/galeria/galeria (7).jpeg" alt="Foto tallado en madera">
+                </div>
+                <div class="animate__animated animate__backInLeft contenedorFoto">
+                    <img src="../assets/img/galeria/galeria (8).jpeg" alt="Foto tallado en madera">
+                </div>
+                <div class="animate__animated animate__backInLeft contenedorFoto">
+                    <img src="../assets/img/galeria/galeria (9).jpeg" alt="Foto tallado en madera">
+                </div>
+                <div class="animate__animated animate__backInLeft contenedorFoto">
+                    <img src="../assets/img/galeria/galeria (10).jpeg" alt="Foto tallado en madera">
+                </div>
+                <div class="animate__animated animate__backInLeft contenedorFoto">
+                    <img src="../assets/img/galeria/galeria (11).jpeg" alt="Foto tallado en madera">
+                </div>
+                <div class="animate__animated animate__backInLeft contenedorFoto">
+                    <img src="../assets/img/galeria/galeria (12).jpeg" alt="Foto tallado en madera">
+                </div>
+                <div class="animate__animated animate__backInLeft contenedorFoto">
+                    <img src="../assets/img/galeria/galeria (13).jpeg" alt="Foto tallado en madera">
+                </div>
+                <div class="animate__animated animate__backInLeft contenedorFoto">
+                    <img src="../assets/img/galeria/galeria (14).jpeg" alt="Foto tallado en madera">
+                </div>
+                <div class="animate__animated animate__backInLeft contenedorFoto">
+                    <img src="../assets/img/galeria/galeria (15).jpeg" alt="Foto tallado en madera">
+                </div>
+                <div class="animate__animated animate__backInLeft contenedorFoto">
+                    <img src="../assets/img/galeria/galeria (16).jpeg" alt="Foto tallado en madera">
+                </div>
+                <div class="animate__animated animate__backInLeft contenedorFoto">
+                    <img src="../assets/img/galeria/galeria (17).jpeg" alt="Foto tallado en madera">
+                </div>
+                <div class="animate__animated animate__backInLeft contenedorFoto">
+                    <img src="../assets/img/galeria/galeria (18).jpeg" alt="Foto tallado en madera">
+                </div>
+                <div class="animate__animated animate__backInLeft contenedorFoto">
+                    <img src="../assets/img/galeria/galeria (19).jpeg" alt="Foto tallado en madera">
+                </div>
+                <div class="animate__animated animate__backInLeft contenedorFoto">
+                    <img src="../assets/img/galeria/galeria (20).jpeg" alt="Foto tallado en madera">
+                </div>
             </div>
         </section>
 
     </main>
 
-    <footer class="d-flex justify-content-center">
+    <footer class="d-flex justify-content-center animate__animated animate__fadeIn">
         <div class="d-flex align-items-center gap-2">
             <p class="m-0">Guillermo Arana</p>
             <a href="https://www.instagram.com/guillermoaranatallado/">
-                <img style="height:25px" src="../assets/img/icono_instagram.png" alt="logo instagram">
+                <img style="height:25px" src="../assets/img/otras/icono_instagram.png" alt="logo instagram">
             </a>
             <a href="https://api.whatsapp.com/send?phone=5491160245972">
-                <img style="height:25px" src="../assets/img/icono_whatsapp.png" alt="logo whatsapp">
+                <img style="height:25px" src="../assets/img/otras/icono_whatsapp.png" alt="logo whatsapp">
             </a>
             <a href="mailto: arana.marcos@gmail.com">
-                <img style="height:25px" src="../assets/img/icono_mail.png" alt="logo email">
+                <img style="height:25px" src="../assets/img/otras/icono_mail.png" alt="logo email">
             </a>
         </div>
     </footer>

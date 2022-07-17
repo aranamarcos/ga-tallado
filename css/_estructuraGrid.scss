@@ -1,11 +1,11 @@
 
 /* ------------------------------------- */
-/* Estructura grid general*/
+/* Estructura grid general */
 
 #estructuraBody {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 100px auto 40px;
+    grid-template-rows: 100px auto 50px;
     grid-template-areas: "header" "main" "footer";
 }
 

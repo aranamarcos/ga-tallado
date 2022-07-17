@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="./assets/img/logo.png"/>
+    <link rel="icon" href="./assets/img/otras/logo.png"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tallados en Madera de Guillermo Arana</title>
@@ -16,19 +16,26 @@
     <link rel="stylesheet" href="./css/style.css"/>
 </head>
 
-<body id="estructuraBody"> 
+<body id="estructuraBody">
 
-    <header>
+    <header class="fixed-top">
+
         <!-- banner superior con novedades -->        
-        <div class="container-fluid banner text-center fw-bold">Proximo Workshop 25 de Mayo - Colegiales</div>
+        <div class="banner">
+            <div>
+                <a href="./pages/clases.html">Proximo Workshop 6 de Agosto - Colegiales</a>
+                <br>
+                <a href="./pages/clases.html">Clases regulares en Tigre y Martinez</a>
+            </div>
+        </div>
         
         <!-- menu -->
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
 
                 <!-- logo -->
-                <a class="navbar-brand" href="./index.html">
-                    <img class="opacity-75" style="height: 50px" src="./assets/img/LogoGA.png" alt="logo">
+                <a class="navbar-brand" href="../index.html">
+                    <img class="opacity-75" style="height: 50px" src="../assets/img/otras/LogoGA.png" alt="logo">
                 </a>
 
                 <!-- menu hamburguesa -->
@@ -38,7 +45,7 @@
 
                 <!-- link a paginas -->
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav text-center">
+                    <ul class="navbar-nav navbar-custom">
                         <li class="nav-item">
                             <a class="nav-link p-2" href="./pages/sobre-mi.html">Sobre mi</a>
                         </li>
@@ -60,29 +67,76 @@
         </nav>
     </header>
 
+    
+    <main>
 
-    <main class="imgFondoIndex animate__animated animate__fadeIn">
+        <!-- Index parte 1 (superior): Titulos e imagen de fondo -->
+        <div class="background_Index animate__animated animate__fadeIn">
+            <div class="indexPart1">
+                <h1 class="titulo animate__animated animate__slideInDown">TALLADO ORNAMENTAL EN MADERA</h1>
+                <h2 class="subTitulo">Cursos, workshops, productos, y trabajos a pedido.</h2>
+                <h2 class="firma">Guillermo Arana</h2>
+                <a href="#indexPart2_inicio">
+                    <img id="indexPart2_inicio" class="animate__animated animate__bounce animate__infinite animate__slow" src="./assets/img/otras/flecha_doble_abajo.png" alt="">
+                </a>
+            </div>
+        </div>
+        
 
-        <!-- Titulos de presentacion -->
-        <div class="cajaTitulo">
-            <h1 class="titulo">TALLADO ORNAMENTAL EN MADERA</h1>
-            <h2 class="titulo--modifier">Cursos, workshops, productos, y trabajos a pedido.</h2>
-            <h2 class="titulo--firma">Guillermo Arana</h2>
+        <!-- Index parte 2 (inferior): Intro y links a mas info -->
+        <div class="cointainer-fluid justify-content-center indexPart2">
+
+            <!-- texto intro -->
+            <div class="row d-flex align-items-center justify-content-center indexPart2">
+                <div class="col-md-12 col-xl-8 d-flex align-items-center justify-content-center">
+                    <p class="txt1_index2">Hola! Soy Guillermo Arana, ebanista y profesor de tallado en madera, y te invito a conocer este mundo del tallado que tanto me apasiona.</p>
+                </div>
+            </div>
+
+            <!-- trabajos / productos -->
+            <div class="row d-flex align-items-center justify-content-center indexPart2">
+                <!-- texto -->
+                <div class="col-sm-10 col-md-6 col-xl-4 d-flex align-items-center justify-content-center">
+                    <p class="txt2_index2">
+                        Todos mis trabajos son realizados de forma artesanal, lo que hace que cada pieza sea unica.
+                        <a class="fontColor_c1" href="./pages/productos.html">Ir a mis trabajos</a>
+                    </p>
+                </div>
+                <!-- video -->
+                <div class="col-sm-10 col-md-6 col-xl-4 d-flex align-items-center justify-content-center">
+                    <video src="./assets/video/video-tallado.mp4" alt="video tallando artesanalmente un corazon de madera" autoplay muted loop></video>
+                </div>
+            </div>
+                
+            <!-- clases / workshops -->  
+            <div class="row d-flex align-items-center justify-content-center indexPart2">
+                <!-- texto (solo desktop)-->
+                <div id="invertirOrdenMobile_index2" class="col-sm-10 col-md-6 col-xl-4 d-flex align-items-center justify-content-center">
+                    <p class="txt2_index2">
+                        Si te interesa incursionar en este oficio y crear tus propias piezas, podes sumarte a alguno de mis cursos o workshops.
+                        <a class="fontColor_c1" href="./pages/clases.html">Ir a cursos y workshops.</a>
+                    </p>
+                </div>
+                <!-- imagen -->
+                <div class="col-sm-10 col-md-6 col-xl-4 d-flex align-items-center justify-content-center">
+                    <img src="./assets/img/clases/taller_tigre.jpeg" alt="foto de una clase de tallado">
+                </div>      
+            </div>
         </div>
     </main>
 
 
-    <footer class="d-flex justify-content-center">
+    <footer class="d-flex justify-content-center animate__animated animate__fadeIn">
         <div class="d-flex align-items-center gap-2">
             <p class="m-0">Guillermo Arana</p>
             <a href="https://www.instagram.com/guillermoaranatallado/">
-                <img style="height:25px" src="./assets/img/icono_instagram.png" alt="logo instagram">
+                <img style="height:25px" src="./assets/img/otras/icono_instagram.png" alt="logo instagram">
             </a>
             <a href="https://api.whatsapp.com/send?phone=5491160245972">
-                <img style="height:25px" src="./assets/img/icono_whatsapp.png" alt="logo whatsapp">
+                <img style="height:25px" src="./assets/img/otras/icono_whatsapp.png" alt="logo whatsapp">
             </a>
             <a href="mailto: arana.marcos@gmail.com">
-                <img style="height:25px" src="./assets/img/icono_mail.png" alt="logo email">
+                <img style="height:25px" src="./assets/img/otras/icono_mail.png" alt="logo email">
             </a>
         </div>
     </footer>

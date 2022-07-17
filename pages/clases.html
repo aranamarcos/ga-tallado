@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="../assets/img/logo.png"/>
+    <link rel="icon" href="../assets/img/otras/logo.png"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tallados en Madera de Guillermo Arana | CLASES</title>
@@ -18,9 +18,16 @@
 
 <body id="estructuraBody">
 
-    <header>
+    <header class="fixed-top">
+
         <!-- banner superior con novedades -->        
-        <div class="container-fluid banner text-center fw-bold">Proximo Workshop 25 de Mayo - Colegiales</div>
+        <div class="banner">
+            <div>
+                <a href="./clases.html">Proximo Workshop 6 de Agosto - Colegiales</a>
+                <br>
+                <a href="./clases.html">Clases regulares en Tigre y Martinez</a>
+            </div>
+        </div>
         
         <!-- menu -->
         <nav class="navbar navbar-expand-lg navbar-dark">
@@ -28,7 +35,7 @@
 
                 <!-- logo -->
                 <a class="navbar-brand" href="../index.html">
-                    <img class="opacity-75" style="height: 50px" src="../assets/img/LogoGA.png" alt="logo">
+                    <img class="opacity-75" style="height: 50px" src="../assets/img/otras/LogoGA.png" alt="logo">
                 </a>
 
                 <!-- menu hamburguesa -->
@@ -38,21 +45,21 @@
 
                 <!-- link a paginas -->
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav text-center">
+                    <ul class="navbar-nav navbar-custom">
                         <li class="nav-item">
-                            <a class="nav-link p-2" href="../pages/sobre-mi.html">Sobre mi</a>
+                            <a class="nav-link p-2" href="./sobre-mi.html">Sobre mi</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link p-2" href="../pages/clases.html">Clases</a>
+                            <a class="nav-link p-2" href="./clases.html">Clases</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link p-2" href="../pages/productos.html">Productos</a>
+                            <a class="nav-link p-2" href="./productos.html">Productos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link p-2" href="../pages/galeria.html">Galeria</a>
+                            <a class="nav-link p-2" href="./galeria.html">Galeria</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link p-2" href="../pages/contacto.html">Contacto</a>
+                            <a class="nav-link p-2" href="./contacto.html">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -69,8 +76,8 @@
             <div class="row d-flex justify-content-around">
 
                 <!-- tarjeta 1: cursos regulares -->
-                <div class="card text-bg-dark col-sm-12 col-xl-6 m-4" style="max-width: 25rem;">
-                    <h2 class="fontColor_c2 text-center p-2 opacity-75">Cursos Regulares</h2>
+                <div class="animate__animated animate__fadeInLeft card text-bg-dark col-sm-12 col-xl-6 m-4" style="max-width: 25rem;">
+                    <h2 class="fontColor_c1 text-center p-2 opacity-75">Cursos Regulares</h2>
                     
                     <!-- carousel de cursos -->
                     <div id="carouselCursosRegulares" class="carousel slide card-img-top" data-bs-ride="false">
@@ -83,7 +90,7 @@
         
                             <!-- item: curso tigre -->
                             <div class="carousel-item active">
-                                <img src="../assets/img/taller_tigre.jpeg" class="d-block w-100 opacity-15" alt="foto del taller tigre">
+                                <img src="../assets/img/clases/taller_tigre.jpeg" class="d-block w-100 opacity-15" alt="foto del taller tigre">
                                 <div class="carousel-caption descripcionCursos">
                                     <h2 class="fontColor_c1">TIGRE</h2>
                                     <hr>
@@ -95,7 +102,7 @@
             
                             <!-- item: curso martinez -->
                             <div class="carousel-item">
-                                <img src="../assets/img/taller_martinez.jpeg" class="d-block w-100 opacity-15" alt="foto del taller martinez">
+                                <img src="../assets/img/clases/taller_martinez.jpeg" class="d-block w-100 opacity-15" alt="foto del taller martinez">
                                 <div class="carousel-caption descripcionCursos">
                                     <h2 class="fontColor_c1">MARTINEZ</h2>
                                     <hr>
@@ -125,8 +132,8 @@
         
         
                 <!-- tarjeta 2: workshops -->
-                <div class="card text-bg-dark col-sm-12 col-md-6 m-4" style="max-width: 25rem;">
-                    <h2 class="fontColor_c2 text-center p-2 opacity-75">Workshops</h2>
+                <div class="animate__animated animate__fadeInRight card text-bg-dark col-sm-12 col-md-6 m-4" style="max-width: 25rem;">
+                    <h2 class="fontColor_c1 text-center p-2 opacity-75">Workshops</h2>
 
                     <!-- carousel de cursos -->
                     <div id="carouselWorkshops" class="carousel slide card-img-top" data-bs-ride="false">
@@ -140,36 +147,36 @@
         
                             <!-- item: workshop colegiales -->
                             <div class="carousel-item active">
-                                <img src="../assets/img/workshop_colegiales.jpeg" class="d-block w-100 opacity-15" alt="foto del workshop">
+                                <img src="../assets/img/clases/workshop_colegiales.jpeg" class="d-block w-100 opacity-15" alt="foto del workshop">
                                 <div class="carousel-caption descripcionCursos">
                                     <h2 class="fontColor_c1">COLEGIALES</h2>
                                     <hr>
                                     <p>Milagritos Mexicanos</p>
-                                    <p class="m-0">Miercoles 25 de Mayo</p>
+                                    <p class="m-0">Sabado 6 de Agosto</p>
                                     <p>de 10 a 12:30hs</p>
                                 </div>
                             </div>
 
                             <!-- item: workshop san isidro -->
                             <div class="carousel-item">
-                                <img src="../assets/img/workshop_san-isidro.jpeg" class="d-block w-100 opacity-15" alt="foto del workshop">
+                                <img src="../assets/img/clases/workshop_san-isidro.jpeg" class="d-block w-100 opacity-15" alt="foto del workshop">
                                 <div class="carousel-caption descripcionCursos">
                                     <h2 class="fontColor_c1">SAN ISIDRO</h2>
                                     <hr>
                                     <p>Milagritos Mexicanos</p>
-                                    <p class="m-0">Sabado 11 de Junio</p>
+                                    <p class="m-0">Sabado 13 de Agosto</p>
                                     <p>de 16 a 18:30hs</p>
                                 </div>
                             </div>
 
                             <!-- item: workshop banfield -->
                             <div class="carousel-item">
-                                <img src="../assets/img/workshop_banfield.jpeg" class="d-block w-100 opacity-15" alt="foto del workshop">
+                                <img src="../assets/img/clases/workshop_banfield.jpeg" class="d-block w-100 opacity-15" alt="foto del workshop">
                                 <div class="carousel-caption descripcionCursos">
                                     <h2 class="fontColor_c1">BANFIELD</h2>
                                     <hr>
                                     <p>Milagritos Mexicanos</p>
-                                    <p class="m-0">Sabado 18 de Junio</p>
+                                    <p class="m-0">Sabado 20 de Agosto</p>
                                     <p>de 16 a 18:30hs</p>
                                 </div>
                             </div>
@@ -196,17 +203,17 @@
     </main>
 
 
-    <footer class="d-flex justify-content-center">
+    <footer class="d-flex justify-content-center animate__animated animate__fadeIn">
         <div class="d-flex align-items-center gap-2">
             <p class="m-0">Guillermo Arana</p>
             <a href="https://www.instagram.com/guillermoaranatallado/">
-                <img style="height:25px" src="../assets/img/icono_instagram.png" alt="logo instagram">
+                <img style="height:25px" src="../assets/img/otras/icono_instagram.png" alt="logo instagram">
             </a>
             <a href="https://api.whatsapp.com/send?phone=5491160245972">
-                <img style="height:25px" src="../assets/img/icono_whatsapp.png" alt="logo whatsapp">
+                <img style="height:25px" src="../assets/img/otras/icono_whatsapp.png" alt="logo whatsapp">
             </a>
             <a href="mailto: arana.marcos@gmail.com">
-                <img style="height:25px" src="../assets/img/icono_mail.png" alt="logo email">
+                <img style="height:25px" src="../assets/img/otras/icono_mail.png" alt="logo email">
             </a>
         </div>
     </footer>
